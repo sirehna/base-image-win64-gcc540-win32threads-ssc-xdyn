@@ -5,7 +5,7 @@ WORKDIR /opt
 
 RUN git clone https://github.com/google/protobuf.git protobuf_src && \
     cd protobuf_src && \
-    git checkout v3.0.0-beta-2 && \
+    git checkout v3.7.1 && \
     mkdir cmake_build && \
     cd cmake_build && \
     cmake ../cmake \
