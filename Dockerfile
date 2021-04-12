@@ -153,7 +153,9 @@ RUN wget https://support.hdfgroup.org/ftp/HDF5/prev-releases/hdf5-1.8/hdf5-1.8.2
     rm -rf hdf5_src.tar.gz
 
 RUN cd /opt && \
-    wget https://github.com/sirehna/ssc/releases/download/v8.0.2/ssc_binary_windows_64.zip -O ssc.zip && \
+    wget https://gitlab.com/sirehna_naval_group/ssc/ssc/-/jobs/artifacts/v9.0.1/download?job=Windows+64+bits+with+GCC+5.4.0+win32+threads -O artifacts.zip && \
+    unzip artifacts.zip && \
+    rm artifacts.zip && \
     mkdir ssc && \
     cd ssc && \
     unzip ../ssc.zip && \
